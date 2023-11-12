@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("/Users/ngonbulu/Desktop/\ logo/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    
+}
+
+header, footer {margin-bottom: 20px;}
+
+header {
+    grid-column: span 2; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    padding: 24px 0;
+    background-color: #777;
+    width: 100%;
+
+}
+.project-grid {
+    display: grid;
+    grid-template-areas:
+        "order order"
+        "delivery  billing"
+        "adress  billing-adress";
+
+    grid-gap: 30px;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.project {
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    
+}
+
+#order {
+    grid-area: order;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.order-details img{
+    width: 17%;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 300px;
+}
+
+#delivery {
+    grid-area: delivery;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+}
+
+#billing {
+    grid-area: billing;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#adress {
+    grid-area: adress;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#billing-adress {
+    grid-area: billing-adress;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.status {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.status:hover {
+    background-color: #0056b3;
+    
+}
+
+
+footer {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
